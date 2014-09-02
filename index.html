@@ -8,8 +8,8 @@
 $(document).ready(function(){
     $('.footerbutton').on('click',function(e){
         //e.preventDefault();
-        console.log('clicked: ',this.id);
-        window.alert('clicked');
+        console.log('clicked: ', $(this).attr('href'));
+    
     });
 });
 </script>
