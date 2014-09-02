@@ -8,8 +8,10 @@
 $(document).ready(function(){
     $('.footerbutton').on('click',function(e){
         //e.preventDefault();
-        console.log('clicked: ', $(this).attr('href'));
-    
+        var pageid = $(this).attr('href');
+        console.log('clicked: ', pageid );
+        $("div[data-role='page']").css({display: 'none'});
+        $(pageid).css({ display: 'block' });
     });
 });
 </script>
