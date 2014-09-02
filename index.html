@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.footerbutton').on('click',function(e){
         //e.preventDefault();
         var pageid = $(this).attr('href');
-        console.log('clicked: ', pageid );
+        //console.log('clicked: ', pageid );
         $("div[data-role='page']").css({display: 'none'});
         $(pageid).css({ display: 'block' });
     });
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 	<div data-role="footer">
 		<button class='footerbutton' href="#page-home"  data-role="button" >Page 1</button>
-    	<button class='footerbutton' href="#page-page2" data-role="button" >Page 2<button>
+    	<button class='footerbutton' href="#page-page2" data-role="button" >Page 2</button>
     	<button class='footerbutton' href="#page-page3" data-role="button" >Page 3</button>
 	</div><!-- /footer -->
 </div><!-- /page -->
