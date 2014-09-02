@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>StudyHelps.net</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type='text/javascript' language='javascript'>
+$('div a').on('click',function(e){
+    e.preventDefault();
+    console.log('clicked: ',this.id);
+});
+</script>
+</head>
+<body>
+
+<div id='page-home' data-role="page">
+	<div data-role="header">
+		<h1>Home Page</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Home Page content goes here.</p>		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<a href="#page-home"  data-role="button" >Page 1</a>
+    	<a href="#page-page2" data-role="button" >Page 2</a>
+    	<a href="#page-page3" data-role="button" >Page 3</a>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id='page-page2' data-role="page" data-add-back-btn="true" style='display:none'>
+	<div data-role="header">
+		<h1>Page 2</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Page 2 content goes here.</p>		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<a href="#page-home"  data-role="button" >Page 1</a>
+    	<a href="#page-page2" data-role="button" >Page 2</a>
+    	<a href="#page-page3" data-role="button" >Page 3</a>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id='page-page3' data-role="page" data-add-back-btn="true" style='display:none'>
+	<div data-role="header">
+		<h1>Page 3</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Page 3 content goes here.</p>		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<a href="#page-home"  data-role="button" >Page 1</a>
+    	<a href="#page-page2" data-role="button" >Page 2</a>
+    	<a href="#page-page3" data-role="button" >Page 3</a>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
