@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type='text/javascript' language='javascript'>
-$('a').on('click',function(e){
+$('a.footerbutton').on('click',function(e){
     e.preventDefault();
     console.log('clicked: ',this.id);
     window.alert('clicked');
@@ -24,9 +24,9 @@ $('a').on('click',function(e){
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<a href="#page-home"  data-role="button" >Page 1</a>
-    	<a href="#page-page2" data-role="button" >Page 2</a>
-    	<a href="#page-page3" data-role="button" >Page 3</a>
+		<a class='footerbutton' href="#page-home"  data-role="button" >Page 1</a>
+    	<a class='footerbutton' href="#page-page2" data-role="button" >Page 2</a>
+    	<a class='footerbutton' href="#page-page3" data-role="button" >Page 3</a>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
@@ -40,9 +40,9 @@ $('a').on('click',function(e){
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<a href="#page-home"  data-role="button" >Page 1</a>
-    	<a href="#page-page2" data-role="button" >Page 2</a>
-    	<a href="#page-page3" data-role="button" >Page 3</a>
+		<a class='footerbutton' href="#page-home"  data-role="button" >Page 1</a>
+    	<a class='footerbutton' href="#page-page2" data-role="button" >Page 2</a>
+    	<a class='footerbutton' href="#page-page3" data-role="button" >Page 3</a>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
@@ -56,9 +56,9 @@ $('a').on('click',function(e){
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<a href="#page-home"  data-role="button" >Page 1</a>
-    	<a href="#page-page2" data-role="button" >Page 2</a>
-    	<a href="#page-page3" data-role="button" >Page 3</a>
+		<a class='footerbutton' href="#page-home"  data-role="button" >Page 1</a>
+    	<a class='footerbutton' href="#page-page2" data-role="button" >Page 2</a>
+    	<a class='footerbutton' href="#page-page3" data-role="button" >Page 3</a>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
